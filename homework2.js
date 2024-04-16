@@ -3,10 +3,9 @@ export function addValues(a, b) {
     const typeB = typeof(b);
 
     if (typeA == "number" && typeB == "number") {
-        return a + b;
-    } else if (typeA == "string" || typeB == "string") {
-        if (!isNaN(Number(a)) && !isNaN(Number(b)))
-            return Number(a) + Number(b)
+        return a + b
+    } else if (typeA == "string" && typeB == "string") {
+        return a + b
     }
 
     throw new Error("forbidden operation")

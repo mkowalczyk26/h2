@@ -4,8 +4,8 @@ import { addValues, stringifyValue, invertBoolean, convertToNumber, coerceToType
 try {
     console.log("addValues")
     console.log(addValues(5, 6))
-    console.log(addValues("5", 6))
     console.log(addValues("5", "6"))
+    console.log(addValues("Hello", "World"))
     console.log(addValues("abc", 6))
 } catch(error) {
     console.log(error.message)
