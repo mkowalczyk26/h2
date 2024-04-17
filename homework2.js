@@ -3,7 +3,8 @@ export function addValues(a, b) {
     const typeB = typeof(b);
 
     if (typeA == "number" && typeB == "number") {
-        return a + b
+        if (!isNaN(a) && !isNaN(b))
+            return a + b
     } else if (typeA == "string" && typeB == "string") {
         return a + b
     }
